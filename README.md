@@ -1,6 +1,8 @@
-# `dotfiles-sublime-role`
+# `dotfiles-role-sublime`
+# `dotfiles-role-sublime`
 
-[![Build Status](https://travis-ci.org/thecjharries/dotfiles-sublime-role.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-sublime-role)
+[![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-sublime.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-sublime)
+[![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-sublime.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-sublime)
 
 ## Requirements
 
@@ -22,8 +24,10 @@ config_dir: "{{ root_dir }}/.config"
 
 ```yml
 ---
-- src: git+https://github.com/thecjharries/dotfiles-common-software-role.git
-- src: git+https://github.com/thecjharries/dotfiles-package-installer-role.git
+- src: git+https://github.com/thecjharries/dotfiles-role-common-software.git
+- src: git+https://github.com/thecjharries/dotfiles-role-common-software.git
+- src: git+https://github.com/thecjharries/dotfiles-role-package-installer.git
+- src: git+https://github.com/thecjharries/dotfiles-role-package-installer.git
 ```
 
 ## Example Playbook
@@ -33,7 +37,8 @@ config_dir: "{{ root_dir }}/.config"
 - hosts: all
 
   roles:
-    - role: dotfiles-sublime-role
+    - role: dotfiles-role-sublime
+    - role: dotfiles-role-sublime
 ```
 
 ## License
