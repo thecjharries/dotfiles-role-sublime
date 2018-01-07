@@ -1,7 +1,5 @@
 # `dotfiles-role-sublime`
-# `dotfiles-role-sublime`
 
-[![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-sublime.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-sublime)
 [![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-sublime.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-sublime)
 
 ## Requirements
@@ -25,8 +23,6 @@ config_dir: "{{ root_dir }}/.config"
 ```yml
 ---
 - src: git+https://github.com/thecjharries/dotfiles-role-common-software.git
-- src: git+https://github.com/thecjharries/dotfiles-role-common-software.git
-- src: git+https://github.com/thecjharries/dotfiles-role-package-installer.git
 - src: git+https://github.com/thecjharries/dotfiles-role-package-installer.git
 ```
 
@@ -37,7 +33,6 @@ config_dir: "{{ root_dir }}/.config"
 - hosts: all
 
   roles:
-    - role: dotfiles-role-sublime
     - role: dotfiles-role-sublime
 ```
 
