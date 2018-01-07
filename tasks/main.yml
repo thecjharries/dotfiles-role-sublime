@@ -1,0 +1,23 @@
+---
+- name: "Add GPG key"
+  command: rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+  changed_when: no
+  become: yes
+  tags:
+    - package
+    - repository
+
+- name: "Add repo"
+  command: "dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo"
+  changed_when: no
+  become: yes
+  tags:
+    - package
+    - repository
+
+- name: Update Sublime binaries
+  include_role:
+    name: dotfiles-package-installer-role
+  vars:
+    packages_to_install:
+    - "sublime-text"
