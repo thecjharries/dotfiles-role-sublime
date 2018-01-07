@@ -1,4 +1,11 @@
 ---
+- name: Add dnf config-manager
+  include_role:
+    name: dotfiles-package-installer-role
+  vars:
+    packages_to_install:
+    - "dnf-plugins-core"
+
 - name: "Add GPG key"
   command: rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
   changed_when: no
