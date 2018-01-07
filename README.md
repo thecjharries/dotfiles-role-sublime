@@ -1,7 +1,7 @@
 # `dotfiles-role-sublime`
 
 [![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-sublime.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-sublime)
-[![GitHub release](https://img.shields.io/github/release/thecjharries/dotfiles-role-sublime.svg)](https://github.com/thecjharries/dotfiles-role-sublime)
+[![GitHub tag](https://img.shields.io/github/tag/thecjharries/dotfiles-role-sublime.svg)](https://github.com/thecjharries/dotfiles-role-sublime)
 
 ## Requirements
 
