@@ -1,7 +1,7 @@
 ---
 - name: Add dnf config-manager
   include_role:
-    name: dotfiles-package-installer-role
+    name: dotfiles-role-package-installer
   vars:
     packages_to_install:
     - "dnf-plugins-core"
@@ -24,7 +24,7 @@
 
 - name: Update Sublime binaries
   include_role:
-    name: dotfiles-package-installer-role
+    name: dotfiles-role-package-installer
   vars:
     packages_to_install:
     - "sublime-text"
